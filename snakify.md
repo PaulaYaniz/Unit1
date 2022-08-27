@@ -82,15 +82,52 @@ print('The next number for the number ' + str(n) + ' is ' + str(n + 1) + '.')
 print('The previous number for the number ' + str(n) + ' is ' + str(n - 1) + '.')
 ```
 
-##
+## Two timestamps
+A timestamp is three numbers: a number of hours, minutes and seconds. Given two timestamps, calculate how many seconds is between them. The moment of the first timestamp occurred before the moment of the second timestamp.
 ```.py
+h1 = int(input())
+m1 = int(input())
+s1 = int(input())
+h2 = int(input())
+m2 = int(input())
+s2 = int(input())
 
+m1 += h1*60
+s1 += m1*60
+
+m2 += h2*60
+s2 += m2*60
+
+print(s2-s1)
+```
+![image](https://user-images.githubusercontent.com/89135778/187027441-d57183c9-a9f5-46b3-ae07-3e6759788df8.png)
+
+#### Model solution:
+```.py
+hours_1 = int(input())
+minutes_1 = int(input())
+seconds_1 = int(input())
+hours_2 = int(input())
+minutes_2 = int(input())
+seconds_2 = int(input())
+print(hours_2 * 3600 + minutes_2 * 60 + seconds_2
+    - hours_1 * 3600 - minutes_1 * 60 - seconds_1)
 ```
 
-##
-```.py
+## School desks
+A school decided to replace the desks in three classrooms. Each desk sits two students. Given the number of students in each class, print the smallest possible number of desks that can be purchased.
 
+The program should read three integers: the number of students in each of the three classes, a, b and c respectively.
+
+In the first test there are three groups. The first group has 20 students and thus needs 10 desks. The second group has 21 students, so they can get by with no fewer than 11 desks. 11 desks is also enough for the third group of 22 students. So we need 32 desks in total.
+```.py
+a = int(input())
+b = int(input())
+c = int(input())
+
+print(a//2 +a%2 +b//2 +b%2 +c//2 +c%2)
 ```
+![image](https://user-images.githubusercontent.com/89135778/187027722-0e1c4d0f-d742-4898-a22e-c0e4bb9176b3.png)
 
 ##
 ```.py
