@@ -128,11 +128,3 @@ c = int(input())
 print(a//2 +a%2 +b//2 +b%2 +c//2 +c%2)
 ```
 ![image](https://user-images.githubusercontent.com/89135778/187027722-0e1c4d0f-d742-4898-a22e-c0e4bb9176b3.png)
-
-##
-```.py
-
-```
-
-##
-```.py
