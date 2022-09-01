@@ -132,60 +132,115 @@ else:
 ```
 ![image](https://user-images.githubusercontent.com/89135778/187917133-2b995d14-897b-4e01-8c7b-f2b976314aad.png)
 
-## 
+## Equal numbers
+Given three integers, determine how many of them are equal to each other. The program must print one of these numbers: 3 (if all are the same), 2 (if two of them are equal to each other and the third is different) or 0 (if all numbers are different).
+```.py
+a = int(input())
+b = int(input())
+c = int(input())
+
+if a==b==c:
+    print(3)
+
+elif a==b or b==c or a==c:
+    print(2)
+
+else:
+    print(0)
+```
+![image](https://user-images.githubusercontent.com/89135778/187918161-8a6e06ea-4452-4200-8de4-53cca7b2f4ca.png)
+
+## Rook move
 ```.py
 
 ```
 
-## 
+## Chess board - black square
+Given a square of a chessboard. Print BLACK if it's black and print WHITE otherwise.
+The program receives two numbers from 1 to 8 each - the column and the row number of the square.
 ```.py
 
 ```
 
-## 
+## Chess board - same color
+Given two cells of a chessboard. If they are painted in one color, print the word YES, and if in a different color - NO.
+The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell.
 ```.py
 
 ```
 
-## 
+## Distance to closest point
+Given the coordinates of the three points A, B, and C on a line. Print a distance from the point A to closest point to it.
 ```.py
 
 ```
 
-## 
+## Digits in ascending order
+Given a three-digit integer, print YES if its digits go in ascending order, print NO otherwise.
+```.py
+a = int(input())
+
+cen = a // 100
+dec = a // 10 % 10
+uni = a % 10
+
+if uni > dec and dec > cen:
+    print("YES")
+else:
+    print("NO")
+```
+![image](https://user-images.githubusercontent.com/89135778/187920199-bcf79cd3-52c3-47cb-a6ad-d66632a8d779.png)
+
+## Four-digit palindrome
+A palindrome is a number which reads the same when read forward as it it does when read backward. Given a four-digit integer, print "YES" if it's a palindrome and print "NO" otherwise.
+```.py
+a = input()
+
+if a[0] == a[-1] and a[1] == a[-2]:
+    print("YES")
+else:
+    print("NO")
+```
+![image](https://user-images.githubusercontent.com/89135778/187921887-b185f27f-bc8f-43bd-b6d9-2de66ee08ecd.png)
+
+## King move
+Chess king moves horizontally, vertically or diagonally to any adjacent cell. Given two different cells of the chessboard, determine whether a king can go from the first cell to the second in one move.
+The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output YES if a king can go from the first cell to the second in one move, or NO otherwise.
 ```.py
 
 ```
 
-## 
+## Bishop moves
+In chess, the bishop moves diagonally, any number of squares. Given two different squares of the chessboard, determine whether a bishop can go from the first to the second in one move.
+The program receives as input four numbers from 1 to 8, specifying the column and row numbers of the starting square and the column and row numbers of the ending square. The program should output YES if a Bishop can go from the first square to the second in one move, or NO otherwise.
 ```.py
 
 ```
 
-## 
+## Queen move
+Chess queen moves horizontally, vertically or diagonally to any number of cells. Given two different cells of the chessboard, determine whether a queen can go from the first cell to the second in one move.
+The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output YES if a queen can go from the first cell to the second in one move, or NO otherwise.
 ```.py
 
 ```
 
-## 
+## Index of outlier
+Given three integers: two are equal to each other and the third one is different. Print the index number of this different one - 1, 2 or 3.
 ```.py
+a = int(input())
+b = int(input())
+c = int(input())
 
+if a == b:
+    print(3)
+
+elif b == c:
+    print(1)
+
+else:
+    print(2)
 ```
-
-## 
-```.py
-
-```
-
-## 
-```.py
-
-```
-
-## 
-```.py
-
-```
+![image](https://user-images.githubusercontent.com/89135778/187923597-612c1b95-0b35-4d3c-a5e8-3624b8d4729e.png)
 
 ## 
 ```.py
