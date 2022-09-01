@@ -132,32 +132,49 @@ print(a % 100 * 100 + a // 100)
 ```
 ![image](https://user-images.githubusercontent.com/89135778/187667326-32c1f4a8-f9c0-48bd-ac8c-e7a3c8b8cef7.png)
 
-## 
+## Fractional part
+Given a positive real number, print its fractional part.
 ```.py
+a = float(input())
 
+print(a % 1)
 ```
-
-## 
+#### Model solution:
 ```.py
-
+x = float(input())
+print(x - int(x))
 ```
+![image](https://user-images.githubusercontent.com/89135778/187815766-8ccb7f41-db70-4f19-8b0a-360fc9059dfa.png)
 
-## 
+## First digit after decimal point
+Given a positive real number, print its first digit to the right of the decimal point.
 ```.py
+x = float(input())
+dec = x - int(x)
 
+print(dec * 10 // 1)
 ```
-
-## 
+#### Model solution:
 ```.py
-
+x = float(input())
+print(int(x * 10) % 10)
 ```
+![image](https://user-images.githubusercontent.com/89135778/187816267-2b0cc980-d5a2-4055-8269-93199bfeb4a8.png)
 
-## 
+## Car route
+A car can cover distance of N kilometers per day. How many days will it take to cover a route of length M kilometers? The program gets two numbers: N and M.
 ```.py
+from math import ceil
 
+n = int(input())
+m = int(input())
+
+print(ceil(m / n))
 ```
+![image](https://user-images.githubusercontent.com/89135778/187817053-c6d7cac4-3610-480c-b316-99f80252ccca.png)
 
-## 
+## Day of week
+Let's count the days of the week as follows: 0 - Sunday, 1 - Monday, 2 - Tuesday, ..., 6 - Saturday. Given an integer K in the range 1 to 365, find the number of the day of the week for the K-th day of the year provided that this year's January 1 is Thursday.
 ```.py
 
 ```
