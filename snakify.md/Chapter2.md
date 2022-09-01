@@ -176,32 +176,70 @@ print(ceil(m / n))
 ## Day of week
 Let's count the days of the week as follows: 0 - Sunday, 1 - Monday, 2 - Tuesday, ..., 6 - Saturday. Given an integer K in the range 1 to 365, find the number of the day of the week for the K-th day of the year provided that this year's January 1 is Thursday.
 ```.py
-
+I DO NOT KNOW HOW TO DO IT
 ```
 
-## 
+## Digital clock
+Given the integer N - the number of minutes that is passed since midnight - how many hours and minutes are displayed on the 24h digital clock?
+The program should print two numbers: the number of hours (between 0 and 23) and the number of minutes (between 0 and 59).
 ```.py
+n = int(input())
 
+hours = n // 60
+minutes = n % 60
+
+print(hours, minutes)
+```
+![image](https://user-images.githubusercontent.com/89135778/187903330-a777cd51-9b24-4d9b-8c66-9ebff20ded98.png)
+
+## Total lost
+```.py
+I DO NOT KNOW HOW TO DO IT
 ```
 
-## 
+## Century
 ```.py
-
+I DO NOT KNOW HOW TO DO IT
 ```
 
-## 
-```.py
+## Snail
+A snail goes up A feet during the day and falls B feet at night. How long does it take him to go up H feet?
+Given three integer numbers H, A and B (A > B), the program should output a number of days.
 
+```.py
+h = int(input())
+a = int(input())
+b = int(input())
+count = 1
+
+x = a-b
+
+while a < h:
+    a += x
+    count += 1
+
+print(count)
 ```
 
-## 
+#### Model solution:
 ```.py
+from math import ceil
 
+h = int(input())
+a = int(input())
+b = int(input())
+print(ceil((h - a) / (a - b)) + 1)
+```
+![image](https://user-images.githubusercontent.com/89135778/187907496-46459c85-0566-4052-88f9-3a94609b61ea.png)
+
+## CLOCK FACE 1
+```.py
+I DO NOT KNOW HOW TO DO IT
 ```
 
-## 
+## CLOCK FACE 2
 ```.py
-
+I DO NOT KNOW HOW TO DO IT
 ```
 
 ## 
