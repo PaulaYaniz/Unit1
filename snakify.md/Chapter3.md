@@ -13,13 +13,28 @@ else:
 ## Is odd
 Given an integer, print "YES" if it's odd and print "NO" otherwise.
 ```.py
-I DO NOT KNOW HOW TO DO IT
+num = int(input())
+
+if not(num % 2 == 0):
+    print("YES")
+
+else:
+    print("NO")
 ```
+![image](https://user-images.githubusercontent.com/89135778/188259324-3fa09a6a-9b82-449e-a023-fcd6b4645e58.png)
 
 ## Is even
+Given an integer, print "YES" if it's even and print "NO" otherwise.
 ```.py
-I DO NOT KNOW HOW TO DO IT
+num = int(input())
+
+if num % 2 == 0:
+    print("YES")
+
+else:
+    print("NO")
 ```
+![image](https://user-images.githubusercontent.com/89135778/188259377-b37f18cb-3a5a-402e-85f6-6ecf46190f43.png)
 
 ## Ends on seven
 Given an integer, print "YES" if it's last digit is 7 and print "NO" otherwise. 
@@ -57,19 +72,51 @@ else:
 ![image](https://user-images.githubusercontent.com/89135778/187913009-79f574b8-f637-40b0-8091-5531d61c5727.png)
 
 ## Are both odd
+Given two integers, print "YES" if they're both odd and print "NO" otherwise.
 ```.py
+num1 = int(input())
+num2 = int(input())
 
+if num1 % 2 == 1 and num2 % 2 == 1:
+    print("YES")
+
+else:
+    print("NO")
 ```
+![image](https://user-images.githubusercontent.com/89135778/188259523-8b1a9192-92a4-4248-9659-88146e87b3f5.png)
 
 ## At leat one odd
+Given two integers, print "YES" if at least one of them is odd and print "NO" otherwise.
 ```.py
+num1 = int(input())
+num2 = int(input())
 
+if num1 % 2 == 1 or num2 % 2 == 1:
+    print("YES")
+
+else:
+    print("NO")
 ```
+![image](https://user-images.githubusercontent.com/89135778/188259828-7921bc99-5064-4d68-948d-882bc087445c.png)
 
 ## Exactly one odd
+Given two integers, print "YES" if exactly one of them is odd and print "NO" otherwise.
 ```.py
+num1 = int(input())
+num2 = int(input())
 
+if num1 % 2 == 1 and num2 % 2 == 1 :
+    out = "NO"
+    
+elif num1 % 2 == 1 or num2 % 2 == 1:
+    out = "YES"
+
+else:
+    out = "NO"
+
+print(out)
 ```
+![image](https://user-images.githubusercontent.com/89135778/188260218-020a3dbd-063b-4f50-b777-b10ac1ddb99d.png)
 
 ## Sign function
 For the given integer X print 1 if it's positive, -1 if it's negative, or 0 if it's equal to zero.
@@ -152,15 +199,32 @@ else:
 
 ## Rook move
 ```.py
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
 
+if x1 == x2 or y1 == y2:
+    print("YES")
+else:
+    print("NO")
 ```
+![image](https://user-images.githubusercontent.com/89135778/188260330-22f846e9-83db-4ca8-866a-96c91b515d8c.png)
 
 ## Chess board - black square
 Given a square of a chessboard. Print BLACK if it's black and print WHITE otherwise.
 The program receives two numbers from 1 to 8 each - the column and the row number of the square.
 ```.py
+x = int(input())
+y = int(input())
 
+if (x+y) % 2 == 0:
+    print("BLACK")
+
+else:
+    print("WHITE")
 ```
+![image](https://user-images.githubusercontent.com/89135778/188260885-cf74add2-42c0-4d8a-baea-1fac6f6f0e4e.png)
 
 ## Chess board - same color
 Given two cells of a chessboard. If they are painted in one color, print the word YES, and if in a different color - NO.
@@ -207,15 +271,33 @@ else:
 Chess king moves horizontally, vertically or diagonally to any adjacent cell. Given two different cells of the chessboard, determine whether a king can go from the first cell to the second in one move.
 The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output YES if a king can go from the first cell to the second in one move, or NO otherwise.
 ```.py
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
 
+if x1-x2 < 2 and x1-x2 > -2 and y1-y2 < 2 and y1-y2 > -2: 
+    print("YES")
+else:
+    print("NO")
 ```
+![image](https://user-images.githubusercontent.com/89135778/188261600-edefc1f6-ff87-4767-8d64-9fd76396493e.png)
 
 ## Bishop moves
 In chess, the bishop moves diagonally, any number of squares. Given two different squares of the chessboard, determine whether a bishop can go from the first to the second in one move.
 The program receives as input four numbers from 1 to 8, specifying the column and row numbers of the starting square and the column and row numbers of the ending square. The program should output YES if a Bishop can go from the first square to the second in one move, or NO otherwise.
 ```.py
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
 
+if x1-x2 == y1-y2 or x1-x2 == y2-y1: 
+    print("YES")
+else:
+    print("NO")
 ```
+![image](https://user-images.githubusercontent.com/89135778/188261800-c604ef65-a23e-4808-a299-85b99e563dec.png)
 
 ## Queen move
 Chess queen moves horizontally, vertically or diagonally to any number of cells. Given two different cells of the chessboard, determine whether a queen can go from the first cell to the second in one move.
