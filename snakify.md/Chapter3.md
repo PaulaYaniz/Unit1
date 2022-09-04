@@ -236,8 +236,19 @@ The program receives the input of four numbers from 1 to 8, each specifying the 
 ## Distance to closest point
 Given the coordinates of the three points A, B, and C on a line. Print a distance from the point A to closest point to it.
 ```.py
+a = int(input())
+b = int(input())
+c = int(input())
 
+ab = abs(a-b)
+ac = abs(a-c)
+
+if ab < ac:
+    print(ab)
+else:
+    print(ac)
 ```
+![image](https://user-images.githubusercontent.com/89135778/188311140-30d95924-fe96-4fb1-a9ab-74a24f672c04.png)
 
 ## Digits in ascending order
 Given a three-digit integer, print YES if its digits go in ascending order, print NO otherwise.
