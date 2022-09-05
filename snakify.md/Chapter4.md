@@ -1,26 +1,52 @@
 ## Count to N
 Given an integer N, print all the numbers from 1 to N.
 ```.py
+N = int(input())
 
+for i in range (1, N+1):
+    print(i)
 ```
+![image](https://user-images.githubusercontent.com/89135778/188455261-4e57574f-69be-4271-be45-193bcb3cbd47.png)
 
 ## Series - 1
 Given two integers A and B (A ≤ B). Print all numbers from A to B inclusively.
 ```.py
+a = int(input())
+b = int(input())
 
+for i in range (a, b+1):
+    print(i)
 ```
+![image](https://user-images.githubusercontent.com/89135778/188455523-641d0cca-be98-4d8b-a6b7-c8530483006f.png)
 
 ## First N odd, ascending
 Given an integer N, print all the odd numbers from 1 to N in ascending order.
 ```.py
+N = int(input())
 
+for i in range (1, N+1, 2):
+    print(i)
 ```
+![image](https://user-images.githubusercontent.com/89135778/188455832-ce2da140-9a61-4c50-8b57-f6369f533e62.png)
 
 ## Series - 2
 Given two integers A and B. Print all numbers from A to B inclusively, in ascending order, if A < B, or in descending order, if A ≥ B.
 ```.py
+a = int(input())
+b = int(input())
 
+if a < b:
+    for i in range (a, b+1):
+        print(i)
+
+if a > b:
+    for i in range (a, b-1, -1):
+        print(i)
+
+if a == b:
+    print(a)
 ```
+![image](https://user-images.githubusercontent.com/89135778/188456834-7f80a10e-cb33-4329-8382-06477e3851ff.png)
 
 ## First N even, descending
 Given an integer N, print all the even numbers from 0 to N in descending order.
