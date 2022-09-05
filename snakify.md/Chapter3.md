@@ -335,47 +335,66 @@ else:
 ```
 ![image](https://user-images.githubusercontent.com/89135778/187923597-612c1b95-0b35-4d3c-a5e8-3624b8d4729e.png)
 
-## 
+## Knight move
+Chess knight moves like the letter L. It can move two cells horizontally and one cell vertically, or two cells vertically and one cells horizontally. Given two different cells of the chessboard, determine whether a knight can go from the first cell to the second in one move.
+
+The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output YES if a knight can go from the first cell to the second in one move, or NO otherwise.
 ```.py
 
 ```
 
-## 
+## Chocolate bar
+Chocolate bar has the form of a rectangle divided into n×m portions. Chocolate bar can be split into two rectangular parts by breaking it along a selected straight line on its pattern. Determine whether it is possible to split it so that one of the parts will have exactly k squares.
+The program reads three integers: n, m, and k. It should print YES or NO.
 ```.py
 
 ```
 
-## 
+## Leap year
+Given the year number. You need to check if this year is a leap year. If it is, print LEAP, otherwise print COMMON.
+The rules in Gregorian calendar are as follows:
+
+- a year is a leap year if its number is exactly divisible by 4 and is not exactly divisible by 100
+- a year is always a leap year if its number is exactly divisible by 400
+Warning. The words LEAP and COMMON should be printed all caps.
 ```.py
 
 ```
 
-## 
+## Days in month
+Given a month - an integer from 1 (January) to 12 (December), print the number of days in it in the year 2017 (or any other non-leap year).
 ```.py
 
 ```
 
-## 
+## Next day
+Given the month (an integer from 1 to 12) and the day in it (an integer from 1 to 31) in the year 2017 (or in any other common year), print the month and the day of the next day to it. The first test corresponds to March 30 and March 31. The second test corresponds to March 31 and April 1.
 ```.py
 
 ```
 
-## 
+## Linear equation
+Write a program that solves a linear equation ax = b in integers. Given two integers a and b (a may be zero), print a single integer root if it exists and print "no solution" or "many solutions" otherwise.
 ```.py
 
 ```
 
-## 
+## Vertices of rectangle
+Given integer coordinates of three vertices of a rectangle whose sides are parallel to the coordinate axes, find the coordinates of the fourth vertex of the rectangle. In the first test the three given vertices are (1, 4), (1, 6), (7, 4). The fourth vertex is thus (7, 6).
 ```.py
 
 ```
 
-## 
+## Sort three numbers
+Given three integers, print them in ascending order.
 ```.py
 
 ```
 
-## 
+## White pawn move
+A white chess pawn moves up vertically one square at a time. An exception is a pawn on a row #2: it can move either one or two squares up. In addition, a white chess pawn captures diagonally up one square to the left or right. A white chess pawn can never occur on a row #1.
+
+The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first square, and then the last two - for the second square. The program should print YES if a white pawn can possibly move from the first square to the second square in one move in some game - either by move or by capture. The program should print NO otherwise. The first four tests correspond to the green arrows on the picture below.
 ```.py
 
 ```
