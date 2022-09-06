@@ -51,8 +51,24 @@ if a == b:
 ## First N even, descending
 Given an integer N, print all the even numbers from 0 to N in descending order.
 ```.py
+n = int(input())
 
+if n % 2 != 0:
+    for i in range(n-1, -2, -2):
+        print(i)
+else:
+    for i in range(n, -1, -2):
+        print(i)
 ```
+#### Model solution:
+```.py
+n = int(input())
+if n % 2 == 1:
+    n -= 1
+for i in range(n, -1, -2):
+    print(i)
+```
+![image](https://user-images.githubusercontent.com/89135778/188623289-49b6921a-6c6d-49b4-bef4-43a709a985e8.png)
 
 ## Sum of ten numbers
 10 numbers are given in the input. Read them and print their sum. Use as few variables as you can.
@@ -95,8 +111,16 @@ print(prod)
 For the given integer N calculate the following sum:
 1^3+2^3+…+N^3
 ```.py
-
+N = int(input())
+num = 0
+sum = 0
+for i in range(N+1):
+    prod = num**3
+    num += 1
+    sum += prod
+print(sum)
 ```
+![image](https://user-images.githubusercontent.com/89135778/188620535-3ef83112-3173-455e-826b-ed82070f91cb.png)
 
 ## Factorial
 In mathematics, the factorial of an integer n, denoted by n! is the following product:
