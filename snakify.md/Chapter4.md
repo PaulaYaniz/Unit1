@@ -57,22 +57,39 @@ Given an integer N, print all the even numbers from 0 to N in descending order.
 ## Sum of ten numbers
 10 numbers are given in the input. Read them and print their sum. Use as few variables as you can.
 ```.py
-
+sum = 0
+for i in range(0, 10):
+    num = int(input())
+    sum += num
+print(sum)
 ```
+![image](https://user-images.githubusercontent.com/89135778/188606565-03e3bda1-8344-4ac6-928e-c9097552ceb0.png)
 
 ## Sum of N numbers
 N numbers are given in the input. Read them and print their sum.
 The first line of input contains the integer N, which is the number of integers to follow. Each of the next N lines contains one integer. Print the sum of these N integers.
 ```.py
-
+total_nums = int(input())
+sum = 0
+for i in range(0, total_nums):
+    num = int(input())
+    sum += num
+print(sum)
 ```
+![image](https://user-images.githubusercontent.com/89135778/188609531-b1a5a497-0a5f-4a29-a1fe-28475a8608ad.png)
 
 ## Product of N numbers
 N numbers are given in the input. Read them and print their product.
 The first line of input contains a positive integer N: the number of integers to follow. Each of the next N lines contains one integer. Print the product of these N integers.
 ```.py
-
+total_nums = int(input())
+prod = 1
+for i in range(0, total_nums):
+    num = int(input())
+    prod *= num
+print(prod)
 ```
+![image](https://user-images.githubusercontent.com/89135778/188610924-a2e74188-2dcb-47fa-a761-8982866152a0.png)
 
 ## Sum of cubes
 For the given integer N calculate the following sum:
