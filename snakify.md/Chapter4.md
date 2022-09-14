@@ -134,8 +134,18 @@ For the given integer n calculate the value n!. Don't use math module in this ex
 Given N numbers: the first number in the input is N, after that N integers are given. Count the number of zeros among the given integers and print it.
 You need to count the number of numbers that are equal to zero, not the number of zero digits.
 ```.py
+N = int(input())
+simulated_input = []
+for n in range(N):
+    simulated_input.append(int(input()))
 
+num_zeros = 0
+for num in simulated_input:
+    if num == 0:
+        num_zeros += 1
+print(num_zeros)
 ```
+![image](https://user-images.githubusercontent.com/89135778/190051794-6f99818d-6f9f-42ad-a86e-6eedcaa8d2fb.png)
 
 ## Adding factorials
 Given an integer n, print the sum 1!+2!+3!+...+n!.
