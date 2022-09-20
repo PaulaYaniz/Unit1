@@ -1,5 +1,13 @@
- ### Programming task
- In a school there are 2400 students and each student uses one locker. Each locker has a unique number from 1 to 2400. The lockers are to be painted in four colors: red, white, yellow and blue, in order of locker numbers, as shown in the following table.link
+### Question 1: 
+#### What is the most powerful computer? Glad you asked. Watch [this](https://youtu.be/PS_PlorW6pM) video about Sierra Computer. Describe below points that surprised you the most.
+What surprised me the most about this video is that the computers takes up a lot of physical space to store.
+
+### Question 2: 
+#### Supercomputers are currently used to investigate solutions to real life problems from cancer research, Ai, economics, or brain simulation. Military uses are also one major force behind the development of these machines. Analyze the benefits and possible drawbacks of developing supercomputers in our modern world? Should we do it?
+The drawbacks of developing supercomputers in our modern world is that there will be a moment in which supercomputers will be able to create mega-hiper-super-computers, and by that moment the humans won't be able to control them and the machines will destroy the world.
+
+### Programming task
+In a school there are 2400 students and each student uses one locker. Each locker has a unique number from 1 to 2400. The lockers are to be painted in four colors: red, white, yellow and blue, in order of locker numbers, as shown in the following table.link
 ![image](https://user-images.githubusercontent.com/89135778/190984718-40e31603-486e-47c8-8230-07fdc51d14ee.png)
 
 The pattern of colors continues in this manner. For example, locker number 15 will be painted yellow.
