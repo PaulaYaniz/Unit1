@@ -176,8 +176,11 @@ print(ceil(m / n))
 ## Day of week
 Let's count the days of the week as follows: 0 - Sunday, 1 - Monday, 2 - Tuesday, ..., 6 - Saturday. Given an integer K in the range 1 to 365, find the number of the day of the week for the K-th day of the year provided that this year's January 1 is Thursday.
 ```.py
+k = int(input())
 
+print((k + 3) % 7)
 ```
+![image](https://user-images.githubusercontent.com/89135778/191253618-216502ea-dfb6-4ab1-b8b0-0fdc11895d26.png)
 
 ## Digital clock
 Given the integer N - the number of minutes that is passed since midnight - how many hours and minutes are displayed on the 24h digital clock?
@@ -209,8 +212,10 @@ print(total_dollars+total_dollars2, total_cents)
 
 ## Century
 ```.py
-I DO NOT KNOW HOW TO DO IT
+year = int(input())
+print((year - 1) // 100 + 1)
 ```
+![image](https://user-images.githubusercontent.com/89135778/191255586-a6396e65-9494-4374-88da-4ea2996e9d78.png)
 
 ## Snail
 A snail goes up A feet during the day and falls B feet at night. How long does it take him to go up H feet?
