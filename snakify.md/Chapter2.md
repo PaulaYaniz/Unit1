@@ -35,7 +35,7 @@ print(a1+a2+a3)
 ```
 ![image](https://user-images.githubusercontent.com/89135778/187176099-9ec14c0b-d3d1-4ca3-82d5-b503c03d998e.png)
 
-## -- Two digits
+## Two digits
 Given a two-digit number, print its digits separately.
 ```.py
 a = int(input())
@@ -47,7 +47,7 @@ print(dec, uni)
 ```
 ![image](https://user-images.githubusercontent.com/89135778/187663483-ebf40739-8e38-47e9-abfd-316602bd6ed5.png)
 
-## -- Swap digits
+## Swap digits
 Given a two-digit number, swap its digits as shown in the tests below.
 ```.py
 a = int(input())
@@ -67,7 +67,7 @@ print(units * 10 + tens)
 ```
 ![image](https://user-images.githubusercontent.com/89135778/187664090-f7733b0b-a511-456c-84d4-73d4fa63662b.png)
 
-## -- Last two digits
+## Last two digits
 Given an integer number, print its last two digits.
 ```.py
 a = int(input())
@@ -84,7 +84,7 @@ print(int(input()) % 100)
 ```
 ![image](https://user-images.githubusercontent.com/89135778/187664737-f5b21da4-72d2-4822-9ecc-701b1b957784.png)
 
-## -- Reverse three digits
+## Reverse three digits
 Given a three-digit integer number, print its digits in a reversed order.
 ```.py
 a = int(input())
@@ -97,7 +97,7 @@ print(str(uni)+str(dec)+str(cen))
 ```
 ![image](https://user-images.githubusercontent.com/89135778/187665382-66cc8ff7-aced-49a5-8bea-697975023c02.png)
 
-## -- Merge two numbers
+## Merge two numbers
 Given two two-digit numbers, merge their digits as shown in the tests below.
 ```.py
 a = int(input())
@@ -112,7 +112,7 @@ print(str(a_dec)+str(b_dec)+str(a_uni)+str(b_uni))
 ```
 ![image](https://user-images.githubusercontent.com/89135778/187666047-ae3e3e19-fb71-4deb-939c-9826ebe550b4.png)
 
-## -- Cyclic rotation
+## Cyclic rotation
 Given a four-digit integer number, perform its cyclic rotation by two digits, as shown in the tests below.
 ```.py
 a = int(input())
@@ -176,7 +176,7 @@ print(ceil(m / n))
 ## Day of week
 Let's count the days of the week as follows: 0 - Sunday, 1 - Monday, 2 - Tuesday, ..., 6 - Saturday. Given an integer K in the range 1 to 365, find the number of the day of the week for the K-th day of the year provided that this year's January 1 is Thursday.
 ```.py
-I DO NOT KNOW HOW TO DO IT
+
 ```
 
 ## Digital clock
@@ -192,10 +192,20 @@ print(hours, minutes)
 ```
 ![image](https://user-images.githubusercontent.com/89135778/187903330-a777cd51-9b24-4d9b-8c66-9ebff20ded98.png)
 
-## Total lost
+## Total cost
+A cupcake costs A dollars and B cents. Determine, how many dollars and cents should one pay for N cupcakes. A program gets three numbers: A, B, N. It should print two numbers: total cost in dollars and cents.
 ```.py
-I DO NOT KNOW HOW TO DO IT
+dollars = int(input())
+cents = int(input())
+num_cupcakes = int(input())
+
+total_dollars = dollars*num_cupcakes
+total_dollars2 = cents*num_cupcakes // 100
+total_cents = (cents*num_cupcakes) % 100
+
+print(total_dollars+total_dollars2, total_cents)
 ```
+![image](https://user-images.githubusercontent.com/89135778/191228838-417fc223-d086-44ba-a756-afc104a93cdd.png)
 
 ## Century
 ```.py
@@ -233,51 +243,26 @@ print(ceil((h - a) / (a - b)) + 1)
 ![image](https://user-images.githubusercontent.com/89135778/187907496-46459c85-0566-4052-88f9-3a94609b61ea.png)
 
 ## CLOCK FACE 1
+H hours, M minutes and S seconds are passed since the midnight (0 ≤ H < 12, 0 ≤ M < 60, 0 ≤ S < 60). Determine the angle (in degrees) of the hour hand on the clock face right now.
 ```.py
-I DO NOT KNOW HOW TO DO IT
+hours = int(input())
+minutes = int(input())
+seconds = int(input())
+
+total_seconds = hours*3600 + minutes*60 + seconds
+
+angle = (total_seconds*360) / (3600*12)
+print(angle)
 ```
+![image](https://user-images.githubusercontent.com/89135778/191229600-b112bb25-a7dd-4ba7-934a-c7aae48be1cf.png)
 
 ## CLOCK FACE 2
+Hour hand turned by α degrees since the midnight. Determine the angle by which minute hand turned since the start of the current hour. Input and output in this problems are floating-point numbers.
 ```.py
-I DO NOT KNOW HOW TO DO IT
+a = float(input())
+a = a % 30
+angle = (a * 360) / 30
+
+print(angle)
 ```
-
-## 
-```.py
-
-```
-
-## 
-```.py
-
-```
-
-## 
-```.py
-
-```
-
-## 
-```.py
-
-```
-
-## 
-```.py
-
-```
-
-## 
-```.py
-
-```
-
-## 
-```.py
-
-```
-
-## 
-```.py
-
-```
+![image](https://user-images.githubusercontent.com/89135778/191230269-0ec04bbb-0d65-470a-a802-c585a200d257.png)
