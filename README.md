@@ -6,6 +6,7 @@ Here you can find:
 
 - [Snakify exercises](https://github.com/PaulaYaniz/Unit1/tree/main/snakify.md)
 - [Daily quizzes](https://github.com/PaulaYaniz/Unit1/tree/main/quizzes)
+- [Programming tasks](https://github.com/PaulaYaniz/Unit1/tree/main/tasks)
 - Coding exercises
 - Class activities
 - Others
