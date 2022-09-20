@@ -127,8 +127,14 @@ In mathematics, the factorial of an integer n, denoted by n! is the following pr
 n!=1×2×…×n
 For the given integer n calculate the value n!. Don't use math module in this exercise.
 ```.py
+n = int(input())
+factorial = 1
 
+for i in range (1, n+1):
+    factorial *= i
+print(factorial)
 ```
+![image](https://user-images.githubusercontent.com/89135778/191233366-67194f85-56ee-4193-a281-eb446614e189.png)
 
 ## The number of zeros
 Given N numbers: the first number in the input is N, after that N integers are given. Count the number of zeros among the given integers and print it.
@@ -151,8 +157,16 @@ print(num_zeros)
 Given an integer n, print the sum 1!+2!+3!+...+n!.
 This problem has a solution with only one loop, so try to discover it. And don't use the math library :)
 ```.py
+n = int(input())
+factorial = 1
+total = 0
 
+for i in range (1, n+1):
+    factorial *= i
+    total += factorial
+print(total)
 ```
+![image](https://user-images.githubusercontent.com/89135778/191233735-96ca33f2-6453-4ef0-9e42-72a0f3782960.png)
 
 ## Squares in range
 Given two integers A and B, print squares of all integer numbers between them, as shown below. There shouldn't be any spaces around * and =. The sep argument of the function print() may help you with that.
@@ -164,8 +178,14 @@ Given two integers A and B, print squares of all integer numbers between them, a
 For given integer n ≤ 9 print a ladder of n steps. The k-th step consists of the integers from 1 to k without spaces between them.
 To do that, you can use the sep and end arguments for the function print().
 ```.py
+n = int(input())
 
+for i in range(1, n+1):
+    for x in range(1, i+1):
+        print(x, sep='', end='')
+    print()
 ```
+![image](https://user-images.githubusercontent.com/89135778/191233989-b9a017a6-7160-4983-bf81-24f39c4bdb99.png)
 
 ## Is prime
 A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself. Given an integer N > 1, print PRIME if it's prime and print COMPOSITE otherwise.
@@ -189,35 +209,18 @@ A prime number is a natural number greater than 1 that has no positive divisors 
 There was a set of cards with numbers from 1 to N. One of the card is now lost. Determine the number on that lost card given the numbers for the remaining cards.
 Given a number N, followed by N − 1 integers - representing the numbers on the remaining cards (distinct integers in the range from 1 to N). Find and print the number on the lost card.
 ```.py
+N = int(input())
 
+result = 0
+for i in range(1, N+1):
+    result += i
+
+nums = 0
+for i in range(1, N):
+    num = int(input())
+    nums += num
+
+print(result-nums)
 ```
+![image](https://user-images.githubusercontent.com/89135778/191234277-f8c77a9f-afb3-4f56-b967-79698dcac292.png)
 
-## 
-```.py
-
-```
-
-## 
-```.py
-
-```
-
-## 
-```.py
-
-```
-
-## 
-```.py
-
-```
-
-## 
-```.py
-
-```
-
-## 
-```.py
-
-```
