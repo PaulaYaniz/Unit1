@@ -230,8 +230,17 @@ else:
 Given two cells of a chessboard. If they are painted in one color, print the word YES, and if in a different color - NO.
 The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell.
 ```.py
+c1 = int(input())
+r1 = int(input())
+c2 = int(input())
+r2 = int(input())
 
+if ((c1 + r1) % 2) == ((c2 + r2) % 2):
+    print("YES")
+else:
+    print("NO")
 ```
+![image](https://user-images.githubusercontent.com/89135778/191230849-00c400d1-36d5-4496-9fe3-5b0afa3e3110.png)
 
 ## Distance to closest point
 Given the coordinates of the three points A, B, and C on a line. Print a distance from the point A to closest point to it.
@@ -314,8 +323,17 @@ else:
 Chess queen moves horizontally, vertically or diagonally to any number of cells. Given two different cells of the chessboard, determine whether a queen can go from the first cell to the second in one move.
 The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output YES if a queen can go from the first cell to the second in one move, or NO otherwise.
 ```.py
+c1 = int(input())
+r1 = int(input())
+c2 = int(input())
+r2 = int(input())
 
+if (c1 == c2 or r1 == r2) or (((c1 + r1) % 2) == ((c2 + r2) % 2)) and ((c1 + r1 == c2 + r2) or (c1 - r1 == c2 - r2)):
+    print("YES")
+else:
+    print("NO")
 ```
+![image](https://user-images.githubusercontent.com/89135778/191231096-4a3ba63a-010b-4138-8f65-391b4e8d4600.png)
 
 ## Index of outlier
 Given three integers: two are equal to each other and the third one is different. Print the index number of this different one - 1, 2 or 3.
@@ -340,15 +358,35 @@ Chess knight moves like the letter L. It can move two cells horizontally and one
 
 The program receives the input of four numbers from 1 to 8, each specifying the column and row number, first two - for the first cell, and then the last two - for the second cell. The program should output YES if a knight can go from the first cell to the second in one move, or NO otherwise.
 ```.py
+c1 = int(input())
+r1 = int(input())
+c2 = int(input())
+r2 = int(input())
 
+if (abs(c1 - c2) == 1 and abs(r1 - r2) == 2) or (abs(c1 - c2) == 2 and abs(r1 - r2) == 1):
+    print("YES")
+else:
+    print("NO")
 ```
+![image](https://user-images.githubusercontent.com/89135778/191231621-1824e767-367b-483f-ba8e-112dfd10811e.png)
 
 ## Chocolate bar
 Chocolate bar has the form of a rectangle divided into n×m portions. Chocolate bar can be split into two rectangular parts by breaking it along a selected straight line on its pattern. Determine whether it is possible to split it so that one of the parts will have exactly k squares.
 The program reads three integers: n, m, and k. It should print YES or NO.
 ```.py
+n_portion = int(input())
+m_portion = int(input())
+k_squares = int(input())
 
+if m_portion * n_portion < k_squares:
+    print("NO")
+else:
+    if (k_squares % m_portion == 0) or (k_squares % n_portion == 0):
+        print("YES")
+    else:
+        print("NO")
 ```
+![image](https://user-images.githubusercontent.com/89135778/191232196-9e892f2f-72ea-4349-9f70-774237ed03dd.png)
 
 ## Leap year
 Given the year number. You need to check if this year is a leap year. If it is, print LEAP, otherwise print COMMON.
@@ -358,8 +396,14 @@ The rules in Gregorian calendar are as follows:
 - a year is always a leap year if its number is exactly divisible by 400
 Warning. The words LEAP and COMMON should be printed all caps.
 ```.py
+year = int(input())
 
+if (year % 4 == 0) and (year % 100 != 0) or (year % 400 == 0):
+    print("LEAP")
+else:
+    print("COMMON")
 ```
+![image](https://user-images.githubusercontent.com/89135778/191232502-06fa0a87-4137-4d11-9130-987dea26bbd9.png)
 
 ## Days in month
 Given a month - an integer from 1 (January) to 12 (December), print the number of days in it in the year 2017 (or any other non-leap year).
