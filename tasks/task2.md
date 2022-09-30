@@ -1,5 +1,31 @@
 ## EV Calculator
 
+#### Data (charging_log.csv):
+```.csv
+date,charge,duration
+12.9.22,8.878kWh,12:32:36
+15.9.22,3.533kWh,5:02:23
+17.9.22,6.828kWh,9:41:46
+18.9.22,5.425kWh,7:43:35
+```
+
+#### my_lib library
+```.py
+colors = ["\033[0;30m", "\033[0;31m", "\033[0;32m", "\033[0;34m"]
+end_code = "\033[00m"
+bold_green = "\33[1;32m"
+
+def validate_int_input(msg:str)->int:
+    """This function validates that the user enters an integer"""
+    end_code = "\033[00m"
+    red = "\033[0;31m"
+    number = input(msg)
+    while not number.isdigit():
+        number = input(f"{red}{msg}{end_code}")
+
+    return int(number)
+```
+
 #### Introductory menu and options
 ```.py
 from my_lib import validate_int_input, end_code, colors, bold_green
