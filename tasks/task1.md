@@ -1,10 +1,24 @@
 ### Question 1: 
 #### What is the most powerful computer? Glad you asked. Watch [this](https://youtu.be/PS_PlorW6pM) video about Sierra Computer. Describe below points that surprised you the most.
-What surprised me the most about this video is that the computers takes up a lot of physical space to store.
+What surprised me the most about this video is that the computer takes up a lot of physical space to store. It is 7000 square feet (approx. 650 square meters) big!
+I have also seen how the country of the United States of America and its people support technology and like to invest in it. That is good because these kinds of advanced technology need popular support, as they are super powerful. They can do many great things: medical explorations, cancer research, etc. However, they can also do a lot of bad things according to many people’s perspectives, such as nuclear development.
 
 ### Question 2: 
 #### Supercomputers are currently used to investigate solutions to real life problems from cancer research, Ai, economics, or brain simulation. Military uses are also one major force behind the development of these machines. Analyze the benefits and possible drawbacks of developing supercomputers in our modern world? Should we do it?
-The drawbacks of developing supercomputers in our modern world is that there will be a moment in which supercomputers will be able to create mega-hiper-super-computers, and by that moment the humans won't be able to control them and the machines will destroy the world.
+The drawbacks of developing computers in our modern world is that there will be a moment in which supercomputers will be able to create mega-hiper-supercomputers, and by that moment the humans won't be able to control them and the machines will destroy the world. 
+However, supercomputers also do a lot of great things for humanity. They save human lives thanks to their technology (in medical technology, for example).
+For that reasons, we should continue developing them but also taking control of them. The moment we lose control over supercomputers, the moment the world will be chaos. 
+
+### Question 3: 
+#### Identify the most advanced computer in your Country (What, specs, location, uses). 
+The most advanced computer in Spain is MareNostrum, from BSC (Barcelona Supercomputing Center). The computer runs SUSE Linux 11 SP3 Operative System and it occupies 180 square meters. It has 14 PB of storage, a speed of 13.7 PFlops and a power of 1.3 MW.
+
+Among its many uses, those of scientific research, simulations and modeling and weather forecasting stand out.
+
+Bibliography:
+http://www.bsc.es/
+
+
 
 ### Programming task
 In a school there are 2400 students and each student uses one locker. Each locker has a unique number from 1 to 2400. The lockers are to be painted in four colors: red, white, yellow and blue, in order of locker numbers, as shown in the following table.link
