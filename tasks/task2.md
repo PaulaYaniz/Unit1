@@ -25,6 +25,8 @@ def validate_int_input(msg:str)->int:
 
     return int(number)
 ```
+![CS-TASKS-my_lib drawio (1)](https://user-images.githubusercontent.com/89135778/193612030-16902c64-7a55-4e09-aa2f-feb6ca0bac51.png)
+
 
 #### Introductory menu and options
 ```.py
