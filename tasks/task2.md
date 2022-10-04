@@ -25,7 +25,7 @@ def validate_int_input(msg:str)->int:
 
     return int(number)
 ```
-![CS-TASKS-my_lib drawio (1)](https://user-images.githubusercontent.com/89135778/193612030-16902c64-7a55-4e09-aa2f-feb6ca0bac51.png)
+![CS-TASKS-my_lib drawio (2)](https://user-images.githubusercontent.com/89135778/193736532-d1661316-14ee-4219-b406-b095e1f02270.png)
 
 
 #### Introductory menu and options
@@ -50,6 +50,7 @@ while option > 4 or option < 1:
 ```
 ![image](https://user-images.githubusercontent.com/89135778/191210464-fe4eb3e7-282c-42fc-a83a-6007f745906a.png)
 ![image](https://user-images.githubusercontent.com/89135778/191210606-cbe14982-0dd8-4ceb-9e29-e41aa687d530.png)
+![CS-TASKS-task2-intromenu drawio](https://user-images.githubusercontent.com/89135778/193737830-806e50b8-d01f-4b93-869e-b2dcf761459b.png)
 
 #### 1. Average time per kWh
 ```.py
