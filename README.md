@@ -10,3 +10,5 @@ Here you can find:
 - Coding exercises
 - Class activities
 - Others
+
+My unit 1 project: [Crypto Wallet](https://github.com/PaulaYaniz/Project1-CryptoWallet)
